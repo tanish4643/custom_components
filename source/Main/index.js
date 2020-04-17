@@ -18,9 +18,12 @@ export default class Main extends Component{
     constructor(props){
     	super(props);
     	this.state = {
-    		name:""
+    		name:"",
+		age:"",
+		email:"",
+		password:"'
     	}
-	}
+}
 
 	render(){
 		return(
@@ -37,19 +40,19 @@ export default class Main extends Component{
 								placeholder="Name"
 								value={this.state.name} />
 
-				<InputComponent change={ (name) => {this.setState({name: name})}} 
+				<InputComponent change={ (name) => {this.setState({age: age})}} 
 								placeholder="Age"
-								value={this.state.name}
+								value={this.state.age}
 								number={true} />
 
-				<InputComponent change={ (name) => {this.setState({name: name})}} 
+				<InputComponent change={ (name) => {this.setState({email: email})}} 
 								placeholder="Email"
-								value={this.state.name} />
+								value={this.state.email} />
 
-				<InputComponent change={ (name) => {this.setState({name: name})}} 
+				<InputComponent change={ (name) => {this.setState({password: password})}} 
 								placeholder="Password"
 								password={true}
-								value={this.state.name} />
+								value={this.state.password} />
 
 			</View>
 		);
